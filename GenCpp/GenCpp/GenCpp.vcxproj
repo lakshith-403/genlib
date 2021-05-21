@@ -139,9 +139,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="crossover.h" />
+    <ClInclude Include="gencpp.h" />
+    <ClInclude Include="mutation.h" />
+    <ClInclude Include="selection.h" />
     <ClInclude Include="util.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="gencpp.cpp" />
+    <ClCompile Include="selection.cpp" />
     <ClCompile Include="Source.cpp" />
     <ClCompile Include="util.cpp" />
   </ItemGroup>

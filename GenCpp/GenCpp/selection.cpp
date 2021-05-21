@@ -2,6 +2,10 @@
 #include <vector>
 #include "util.h"
 
+/// <summary>
+///	Initializing the fitnesses of the population as percentages before running selection algorithms
+/// </summary>
+/// <param name="population"></param>
 void selection::initPopulation(std::vector<std::pair<double, int>>& population) {
 	double totalPerc = 0;
 	for (std::pair<double, int>& p : population)
@@ -11,8 +15,13 @@ void selection::initPopulation(std::vector<std::pair<double, int>>& population) 
 	}
 }
 
+/// <summary>
+/// Roulette Wheel Selection
+/// </summary>
+/// <param name="population"></param>
+/// <param name="parentSize"></param>
+/// <returns></returns>
 std::vector<std::pair<int, int>> selection::roulette_wheel_selection(std::vector<std::pair<double, int>> population, int parentSize) {
-
 	int amount = population.size();
 
 	initPopulation(population);
@@ -43,7 +52,12 @@ std::vector<std::pair<int, int>> selection::roulette_wheel_selection(std::vector
 	return parents;
 }
 
-
+/// <summary>
+/// Stochatic universal sampling
+/// </summary>
+/// <param name="population"></param>
+/// <param name="parentSize"></param>
+/// <returns></returns>
 std::vector<std::pair<int, int>> selection::stochastic_universal_sampling(std::vector<std::pair<double, int>> population, int parentSize) {
 	int amount = population.size();
 
