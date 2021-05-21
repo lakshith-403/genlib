@@ -1,4 +1,6 @@
 #include "util.h"
+#include <vector>
+#include <iostream>
 
 /// <summary>
 /// Returns an integer between the given range
