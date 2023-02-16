@@ -1,9 +1,7 @@
 # GenLib
-#### Genetic Algorithm Library for c++
+#### Genetic Algorithm Implementation for c++
 
-This is a platform independent genetic Algorithm Library written in c++. Standard template functions for mutation, selection, crossover and evaluation are prewritten and can be used with any data type or any object type of your preference.  If you need something more specific it is also possible to use user-defined functions.
-
-Complete code is fairly readable and variable names are self descriptive. If you are using visual studio, Intellisense comments has been added to describe each function.
+This is a genetic Algorithm Library written in c++. Functions for mutation, selection, crossover and evaluation are written and can be used with any data type or any object type of your preference.  If you need something more specific it is also possible to use user-defined functions.
 
 ## Prewritten Functions
 ### Mutation
